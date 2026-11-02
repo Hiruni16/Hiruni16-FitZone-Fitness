@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/registerprogram.css">
+   
+</head>
+<body>
+
+     <!-- Header Section Code -->
+     <header>
+        <a href="index.html"class="logo">F<span>f</span></a>
+
+        <div class='bx bx-menu' id="menu-icon"></div>
+
+        <div class="top-btn">
+            <a href="welcomepg.html" class="nav-btn">Back</a>
+        </div>
+    </header>
+
+    
+    <form action="programReg.php" method="post">
+        <div class="reg-form">
+        <h2>Register for a Program</h2>
+   
+        <input type="name" name="full_name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <select name="program">
+            <option value="select">Select a Program</option>
+            <option value="equipment">Equipment</option>
+            <option value="Personalized">Personalized Training Sessons</option>
+            <option value="group">Group Classes</option>
+            <option value="nutrition">Nutrition Counseling</option>
+            <option value="cardio">Cardio</option>
+            <option value="strngth">Strength Training</option>
+            <option value="yoga">Yoga</option>
+        </select>
+        
+        <button type="submit">Submit</button>
+    </div>
+    </form>
+</body>
+</html>

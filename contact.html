@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>FitZone Fitness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/contact.css">
+    
+    
+</head>
+<body>
+
+
+ <!-- Header Section Code -->
+ <header>
+    <a href="index.html"class="logo">F<span>f</span></a>
+
+    <div class='bx bx-menu' id="menu-icon"></div>
+
+    <ul class="navbar">
+        <li><a href="index.html#home">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="services.html">SERVICES</a></li>  
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+
+
+    <div class="top-btn">
+        <a href="login.html" class="nav-btn">Join Us</a>
+    </div>
+</header>
+
+
+   <!-- Contact Section Code -->
+
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>At FitZone Fitness Center, we’re here to support you 
+                on your fitness journey! Whether you have questions about
+                 our services, want to learn more about our programs, or need 
+                 assistance with membership, our team is ready to help..
+            </p>
+        </div>
+        <div class="contact-container">
+            <div class="contactInfo">
+                <div class="contact-box">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>132 Main Street,<br>Kurunegala,Sri Lanka</p>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+94 125 678 567<br>
+                        +94 123 567 789</p>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>fitzone@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">'
+                <form action="querySubmit.php" method="post">
+                    <h2>Send Queries</h2>
+                    <div class="inputBox">
+                        <input type="text" name="name" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="queries" required="required"></textarea>
+                        <span>Type Your Queries...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="send" value="send">
+                     
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+        <!-- Footer Section Code -->
+
+        <footer class="footer">
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+    
+            </div>
+    
+            <p class="copyright">
+                &copy; FitZone Fitness 2024 - All Rights Reserved
+            </p>
+        </footer>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone Fitness</title>
+    <link rel="stylesheet" href="css/login.css"/>
+   
+</head>
+<body>
+
+     <!-- Header Section Code -->
+     <header>
+        <a href="index.html"class="logo">F<span>f</span></a>
+
+        <div class='bx bx-menu' id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html#home">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>  
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+
+       
+    </header>
+
+
+    <div class="container">
+        <form action="login.php" method="post">
+            <h1>LOGIN</h1>
+
+            <div class="input-box">
+                <input type="text" name="username" placeholder="Username" required />  
+                <ion-icon name="person-outline" class="icon"></ion-icon>            
+            </div>
+
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Password" required />  
+                <ion-icon name="lock-closed-outline" class="icon"></ion-icon>            
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox" /> Remember Me</label>
+                <a href="a">Forgot Password?</a>
+                         
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+
+            <!-- Web Icons Import-->
+
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+     
+        </form>
+        <div class="register-link">
+            <span class="text">Not a member?</span>
+            <a href="register.html" class="text-signup-text">Sign-up</a>
+        </div>
+        <div class="register-link">
+            <span class="text">Admin</span>
+            <a href="adminLogin.html" class="text-signup-text">Login</a>
+        </div>
+        <div class="register-link">
+            <span class="text">Staff</span>
+            <a href="staffLogin.html" class="text-signup-text">Login</a>
+        </div>
+    </div>
+    
+    
+
+    
+</body>
+</html>

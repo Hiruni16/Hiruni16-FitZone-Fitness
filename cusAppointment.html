@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cusAppointment.css">
+    <title>FtiZone Fitness</title>
+</head>
+<body>
+
+    <!-- Header Section Code -->
+    <header>
+        <a href="index.html"class="logo">F<span>f</span></a>
+
+        <div class='bx bx-menu' id="menu-icon"></div>
+
+        <div class="top-btn">
+            <a href="welcomepg.html" class="nav-btn">Back</a>
+        </div>
+
+      
+    </header>
+
+    <div class="background">
+        <div class="booking-form">
+            <h2>Book an Appointment</h2>
+            <form action="submitAppointment.php" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="number" name="phone" id="phone" required>
+
+                <label for="date">Appointment Date:</label>
+                <input type="date" name="date" id="date" required>
+
+
+                <label for="trainer">Trainer:</label>
+                <select name="trainer">
+                    <option value="cardio">Cardio Trainer</option>
+                    <option value="yoga">Yoga Trainer</option>
+                    <option value="strength">Strength</option>
+                    <option value="nutrition">Nutrition Counseling</option>
+                    <option value="strngth">Strength Training</option>                  
+                </select>
+
+                <label for="session">Session Type:</label>
+                <select name="session">
+                    <option value="personal">Personal Session</option>
+                    <option value="group">Group Session</option>
+                </select>
+
+                <button type="submit">Submit Appointment</button>
+
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

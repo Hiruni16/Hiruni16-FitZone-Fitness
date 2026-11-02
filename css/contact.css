@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: -apple-system, sans-serif;
+   
+   
+}
+
+
+ /*Header Section Code */
+
+ header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(1px);
+    transition: all 0.5s ease;
+    
+}
+
+.logo{
+    font-size: 4rem;
+    color: #ffff;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+span{
+    color: rgb(9, 248, 222);
+    
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffff;
+    margin-left: 3rem;
+    transition: all 0.5s ease;
+    border-bottom: 3px solid transparent;
+    
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(9, 248, 222);
+    border-bottom: 3px solid rgb(9, 248, 222);
+}
+
+.nav-btn{
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background: transparent;
+    color: rgb(9, 248, 222);
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.nav-btn:hover{
+    background: rgb(9, 248, 222);
+    color: #ffff;
+    box-shadow: 0 0 18px rgb(9, 248, 222);
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: rgb(9, 248, 222);
+    cursor: pointer;
+    display: none;
+}
+
+
+ /*Contact Section Code */
+
+
+ .contact{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(4, 12, 48, 0.7), rgba(5, 14, 48, 0.7)),
+    url(../images/city2.jpg);
+    background-position: center;
+    background-size: cover ;
+    position: relative;
+    flex-direction: column;
+    
+}
+    
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+    margin: 70px 0 5px 0;
+}
+.contact .content h2{
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contact .content p{
+    font-weight: 300;
+    color: #c9c2c2;
+}
+.contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact-container .contactInfo{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container .contactInfo .contact-box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+
+.contact-container .contactInfo .contact-box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 22px;
+}
+
+.contact-container .contactInfo .contact-box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contact-container .contactInfo .contact-box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactForm{
+    width: 35%;
+    padding: 35px;
+    background: #fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .contactcontainer .contactInfo,
+    .contactForm
+    {
+        width: 100%;
+    }
+}
+
+/* Footer Section Code */
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background: #06022e;
+    text-align: center;
+}
+
+.footer .social a{
+    font-size: 25px;
+    color: rgb(11, 148, 211);
+    border: 2px solid rgb(11, 148, 211);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.5s ease-in-out;
+    
+}
+
+.footer .social a:hover{
+    transform: scale(1.2) translateY(-10px);
+    background: rgb(11, 148, 211);
+    color: #131313;
+    box-shadow: 0 0 25px rgb(11, 148, 211);
+}
+
+.footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}

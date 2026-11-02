@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+ /*Header Section Code Register*/
+
+ header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5%;
+    transition: all 0.5s ease;
+    
+}
+
+.logo{
+    font-size: 4rem;
+    color: #ffff;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+span{
+    color: rgb(9, 248, 222);
+    
+}
+
+.nav-btn{
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background: transparent;
+    color: rgb(9, 248, 222);
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.nav-btn:hover{
+    background: rgb(9, 248, 222);
+    color: #ffff;
+    box-shadow: 0 0 18px rgb(9, 248, 222);
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: rgb(9, 248, 222);
+    cursor: pointer;
+    display: none;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(4, 12, 48, 0.7), rgba(5, 14, 48, 0.7)),
+    url(../images/img4.jpg);
+    background-size: cover;
+}
+
+.container{
+    max-width: 700px;
+    width: 80%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    
+
+
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.details{
+    display: block;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1.5px solid#ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #9b59b6;
+}
+
+.gender{
+    color: black;
+}
+.gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+    
+}
+
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+    
+}
+
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+form .button input:hover{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+@media (max-width: 584px){
+    container{
+        max-width: 100px;
+ }
+ form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%
+ }
+ form .gender-details .category{
+    width: 100%;
+
+ }
+ .container form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+ }
+ .user-details::-webkit-scrollbar{
+    width: 0;
+ }
+}
