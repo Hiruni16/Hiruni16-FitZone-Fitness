@@ -98,5 +98,3 @@ The website was tested to verify its main functionalities, including:
 
 **D. M. Chathurya Hiruni Gunathilaka**
 
-ICBT Campus  
-Cardiff Metropolitan University
